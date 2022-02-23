@@ -197,6 +197,7 @@ else:
 
 #EJERCICIO 12
 
+#ALGORITMO1
 #VARIABLE
 limite = int(input("Selecciona el número límite: "))
 
