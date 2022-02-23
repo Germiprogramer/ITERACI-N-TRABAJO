@@ -85,3 +85,130 @@ for numero in range (subcadenas+1):
 
 
 ### EJERCICIO 09: Búsqueda de palabras en un diccionario
+
+* Para llevar acabo este ejercicio, debemos crear un algoritmo el cual nos pida una palabra y a partir de ahí diferentes opciones, si queremos añadir otra palabra, si queremos eliminar una palabra en caso de haber añadido alguna, o borrar la primera, una opción de terminar el programa en cualquier momento, y una última opción de ordenar la palabra, para esta última opción, para cada palabra, crearemos una tabla y cada celda será ocupada por la palabra que le sigue en orden alfabético en el diccionario.
+
+
+
+```
+import sys
+
+lista=[]
+
+def adjuntar():
+  print("Elige una palabra para introducirla en el diccionario")
+
+  palabra= str(input())
+
+  lista.append(palabra)
+  print(lista)
+  print("¿Deseas añadir palabras? elige entre 'si'o 'no' ")
+
+  eleccion=str(input())
+
+  if eleccion == "si"
+    adjuntar()
+
+  if eleccion == "no"
+
+  elecc()
+
+
+def eliminar():
+
+  print ("Selecciona la palabra que desees borrar ")
+  borrar=str(input())
+  lista.remove(f"{borrar}")
+  print(lista)
+  elecc()
+
+
+def ordenar():
+  lista.sort()
+  print(lista)
+
+
+def elecc():
+  print("Elige una de las siguientes opciones: adjuntar, eliminar, ordenar, o acabar")
+
+  eleccion=str(input())
+
+  if eleccion=="adjuntar"
+    adjuntar()
+
+
+  if eleccion=="eliminar"
+    eliminar()
+
+  if eleccion=="ordenar"
+    ordenar()
+
+  if eleccion=="acabar"
+    print(lista)
+
+    sys.exit
+
+adjuntar()
+
+```
+
+
+
+
+### EJERCICIO 11:  Mcd de dos números enteros
+
+* Para llevar acabo este ejercicio debemos crear un algoritmo que sea capaz de determinar el máximo común divisor de dos números enteros, dando una versión iterativa de dos opciones distintas, realizarlo mediante el método de Euclides, o mediante el método de sumas y restas.
+
+
+```
+elecc=int(input("De que manera quieres encontrar el mcd, a partir de Euclides o sumas y restas"))
+
+num1=int(input("Escribe un número que quieras usar:"))
+
+num2=int(input("Escribe otro número que quieras usar:")
+
+
+if elecc == "Euclides":
+
+  def mcd(num1,num2):
+      if num2 == 0:
+           return num1
+      return mcd ( num2, num1 % num2)
+
+  resultado= mcd ( num1, num2)
+  print(f"El mcd resultante de {num1} y {num2} es {result}")
+
+
+elif elecc == "sumas y restas":
+  def mcd(num1, num2):
+    if (num1 == 0):
+        return num2
+
+    if (num2 == 0):
+        return num1
+
+    if (num1 == num2):
+        return num1
+
+    if (num1 > num2):
+        return mcd( num1-num2, num2)
+
+    return mcd ( num1, num2-num1)  
+
+
+  if(mcd(num1, num2)):
+    result= mcd(num1, num2)
+    print(f"El mcd  de {num1} y {num2} es {result})
+
+
+
+
+else:
+    print("En este caso no podemos realizar el mcd")
+
+```
+
+
+
+### EJERCICIO 12:
+
