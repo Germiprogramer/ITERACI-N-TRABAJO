@@ -2,6 +2,17 @@
 
 #EJERCICIO 7
 
+resultado=[]
+print("Elige un número que quieras editar")
+
+num=int(input())
+print("Elige una base en la que quieras poner el número que has elegido")
+
+base_num= int(input())
+
+
+
+
 #EJERCICIO 8
 
 entrada = input("Introduce una cadena de texto separada por :" )
