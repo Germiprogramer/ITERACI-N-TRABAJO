@@ -11,6 +11,27 @@ print("Elige una base en la que quieras poner el número que has elegido")
 base_num= int(input())
 
 
+def edici(num,base_num):
+  if base_num > 36:
+    print(num)
+
+  elif base_num < 2:
+    print("La base no es válida")
+
+  else:
+    resultado.append(num%base_num)
+
+    if num//base_num ==0:
+      print(f"La solución es {resultado}")
+
+    else:
+      num=num//base_num
+      edici(num, base_num)
+
+  edici(num,base_num)
+      
+
+
 
 
 #EJERCICIO 8
