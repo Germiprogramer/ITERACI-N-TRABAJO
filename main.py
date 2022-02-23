@@ -88,6 +88,44 @@ def adjuntar():
   elecc()
 
 
+def eliminar():
+
+  print ("Selecciona la palabra que desees borrar ")
+  borrar=str(input())
+  lista.remove(f"{borrar}")
+  print(lista)
+  elecc()
+
+
+def ordenar():
+  lista.sort()
+  print(lista)
+
+
+def elecc():
+  print("Elige una de las siguientes opciones: adjuntar, eliminar, ordenar, o acabar")
+
+  eleccion=str(input())
+
+  if eleccion=="adjuntar"
+    adjuntar()
+
+
+  if eleccion=="eliminar"
+    eliminar()
+
+  if eleccion=="ordenar"
+    ordenar()
+
+  if eleccion=="acabar"
+    print(lista)
+
+    sys.exit
+
+adjuntar()
+
+
+
 
 
   
