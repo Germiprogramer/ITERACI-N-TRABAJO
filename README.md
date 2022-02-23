@@ -3,9 +3,12 @@
 La dirección de este repositorio GitHub es : https://github.com/carlospuigserver/ITERACI-N-TRABAJO.git
 
 
-### EJERCICIO 07:
+### EJERCICIO 07:  Edición de un número entero
 
 * En este ejercicio tenemos que llevar a cabo un algoritmo que transforme un número entero n cualquiera en su representación en una base B ≥ 2 cualquiera. Cuando la base es superior a 36, se puede utilizar la representación de los números en base diez, pero separando cada cifra de la representación del número en base B mediante un separador convenido.
+
+
+
 
 
 ```
@@ -38,3 +41,47 @@ def edici(num,base_num):
   edici(num,base_num)
   ```
 
+
+
+### EJERCICIO 08: Análisis de una cadena de caracteres
+
+* Para realizar este ejercicio, debemos crear una cadena de caracteres con distintas partes separadas por un carácter separador específico. El objetivo es separar dichas partes y situarlas en una tabla de cadenas de caracteres. 
+
+
+
+
+
+
+```
+entrada = input("Introduce una cadena de texto separada por :" )
+
+n = len(entrada)
+
+SEPARADOR = ":"
+
+lista = entrada.split(":")
+
+print("""
+nº      Cadena
+""")
+
+subcadenas = list(entrada).count(":")
+
+for numero in range (subcadenas+1):
+    posicion = numero +1
+    print(posicion, "       ", lista[numero])
+
+
+  
+  
+```
+
+
+
+
+
+
+
+
+
+### EJERCICIO 09: Búsqueda de palabras en un diccionario
