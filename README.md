@@ -210,5 +210,46 @@ else:
 
 
 
-### EJERCICIO 12:
+### EJERCICIO 12: Cuadrados perfectos y raíz cuadrada entera
+
+*  Para realizar este ejercicio, hay que crear un algoritmo que establezca la lista de los cuadrados perfectos inferiores a un límite dado. El algoritmo no debe hacer multiplicaciones. También hay que crear un algoritmo de cálculo de la raíz cuadrada entera de un número entero.
+
+
+```
+#ALGORITMO1
+#VARIABLE
+limite = int(input("Selecciona el número límite: "))
+
+#REALIZACIÓN
+range(limite)
+
+listanumero = []
+
+for i in range(limite):
+    listanumero.append(i**2)
+    if i**2>limite:
+        break
+
+listanumero.pop(-1)
+
+print(listanumero)
+
+#ALGORITMO2
+
+#VARIABLE
+          
+Numero = int(input("Elige un número para hayar su raiz entera: "))
+
+#REALIZACIÓN
+listanumero = []
+
+for i in range(10000000000000000000000000000):
+    listanumero.append(i)
+    if (i+1)**2 > Numero:
+        break
+
+print(listanumero[-1])
+
+```
+
 
