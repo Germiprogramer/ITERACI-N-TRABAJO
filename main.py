@@ -132,7 +132,39 @@ adjuntar()
 
 #EJERCICIO 10
 
+
+
+
+
+
 #EJERCICIO 11
+
+
+elecc=int(input("De que manera quieres encontrar el mcd, a partir de Euclides o sumas y restas"))
+
+num1=int(input("Escribe un número que quieras usar:"))
+
+num2=int(input("Escribe otro número que quieras usar:")
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #EJERCICIO 12
 
+limite = int(input("Selecciona el número límite: "))
+
+listanumerosposibles = range(limite)
+
+print(listanumerosposibles)
+
+while 
