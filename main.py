@@ -154,6 +154,10 @@ if elecc == "Euclides":
            return num1
       return mcd ( num2, num1 % num2)
 
+  resultado= mcd ( num1, num2)
+  print(f"El mcd resultante de {num1} y {num2} es {result}")
+
+
 
 
 
