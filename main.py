@@ -158,6 +158,32 @@ if elecc == "Euclides":
   print(f"El mcd resultante de {num1} y {num2} es {result}")
 
 
+elif elecc == "sumas y restas":
+  def mcd(num1, num2):
+    if (num1 == 0):
+        return num2
+
+    if (num2 == 0):
+        return num1
+
+    if (num1 == num2):
+        return num1
+
+    if (num1 > num2):
+        return mcd( num1-num2, num2)
+
+    return mcd ( num1, num2-num1)  
+
+
+  if(mcd(num1, num2)):
+    result= mcd(num1, num2)
+    print(f"El mcd  de {num1} y {num2} es {result})
+
+
+
+
+else:
+    print("En este caso no podemos realizar el mcd")
 
 
 
@@ -171,10 +197,21 @@ if elecc == "Euclides":
 
 #EJERCICIO 12
 
+#VARIABLE
 limite = int(input("Selecciona el número límite: "))
 
-listanumerosposibles = range(limite)
+#REALIZACIÓN
+range(limite)
 
-print(listanumerosposibles)
+listanumero = []
 
-while 
+print(range(limite))
+
+for i in range(limite):
+    listanumero.append(i**2)
+    if i**2>limite:
+        break
+
+listanumero.pop(-1)
+
+print(listanumero)
