@@ -147,6 +147,12 @@ num1=int(input("Escribe un número que quieras usar:"))
 num2=int(input("Escribe otro número que quieras usar:")
 
 
+if elecc == "Euclides":
+
+  def mcd(num1,num2):
+      if num2 == 0:
+           return num1
+      return mcd ( num2, num1 % num2)
 
 
 
