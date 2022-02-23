@@ -54,7 +54,43 @@ for numero in range (subcadenas+1):
     posicion = numero +1
     print(posicion, "       ", lista[numero])
 
+
+  
+  
+  
+
+
+  
+  
+  
 #EJERCICIO 9
+
+import sys
+
+lista=[]
+
+def adjuntar():
+  print("Elige una palabra para introducirla en el diccionario")
+
+  palabra= str(input())
+
+  lista.append(palabra)
+  print(lista)
+  print("¿Deseas añadir palabras? elige entre 'si'o 'no' ")
+
+  eleccion=str(input())
+
+  if eleccion == "si"
+    adjuntar()
+
+  if eleccion == "no"
+
+  elecc()
+
+
+
+
+  
 
 #EJERCICIO 10
 
