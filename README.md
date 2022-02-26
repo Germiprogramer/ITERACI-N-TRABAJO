@@ -67,12 +67,19 @@ nº      Cadena
 
 subcadenas = list(entrada).count(":")
 
-for numero in range (subcadenas+1):
-    posicion = numero +1
-    print(posicion, "       ", lista[numero])
+indicelista = -1
+numero = 0
 
+def funcion(lista, indicelista, numero):
+    if indicelista < subcadenas:
+        indicelista += 1
+        numero += 1
+        print(numero, "       ", lista[indicelista])
+        funcion(lista, indicelista, numero)
+    return indicelista, numero
 
-  
+funcion(lista, indicelista, numero)
+
   
 ```
 
